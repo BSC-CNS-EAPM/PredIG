@@ -5,8 +5,8 @@ Roc Farriol-Duran1,2*, Miguel Vázquez1, Eduard Porta-Pardo1,2, Víctor Guallar1
 2. Josep Carreras Leukaemia Research Institute (IJC), Badalona, Spain
 3. Institució Catalana de Recerca i Estudis Avançats (ICREA), Barcelona, Spain
 
-* First author
-ª Corresponding author
+* First author <br>
+ª Corresponding author <br>
 For scientific or usage enquires refer to: roc.farriol@bsc.es and/or victor.guallar@bsc.es
 
 ## Abstract
