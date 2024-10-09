@@ -24,6 +24,8 @@ D) The user can choose between three PredIG predictive models: PredIG-NeoA optim
 
 ![Alt text](images/fig6_usage_scheme.jpg)
 
+<img src="images/fig6_usage_scheme.jpg" width="60%" alt="Usage Scheme">
+
 
 ### Tutorial
 
