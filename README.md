@@ -16,6 +16,11 @@ Cytotoxic T cells are key effectors in the immune response against pathogens and
 ![Alt text](images/predig_graph_abstract.jpg)
 
 ### Usage Scheme
+##### PredIG usage modes in a user-friendly webserver implementation and in containerized environments for high-throughput reproducibility in HPC environments.
+A) "CSV-Uniprot” mode: input a .CSV file with pairs of peptide and HLA-I allele and the Uniprot ID of the corresponding parental protein. B) "CSV-Recombinant" mode: input a .CSV file with pairs of peptide and HLA-I allele and the amino acid sequence of the protein of origin. This mode is designed to support (recombinant) proteins without Uniprot ID but can also work with any protein sequence. C) "FASTA" mode: input a FASTA file with the target protein sequence and a .CSV file with a list of HLA-I alleles of interest ("HLA_allele" column). By default, PredIG will generate all possible epitopes of 8 to 14 AA of length and will calculate against the input HLA-I alleles. D) The user can choose between three PredIG predictive models: PredIG-NeoA optimized for cancer neoantigens, PredIG-Non-Can for non-canonical cancer antigens and PredIG-Path for pathogen antigens. E) PredIG's output is a CSV with one pHLA-I per row containing PredIG score and all the predictors in PredIG feature space.
+
+embed image
+
 
 ### Tutorial
 
