@@ -106,6 +106,14 @@ Full Epitope: Calculated for the entire epitope sequence. <br>
 | Charge_peptide | Net electric charge. | The net sum of the charges of each of the amino acids comprised in the peptide. | 10.32614/RJ-2015-001 |
 | Stability_peptide | Peptide (in)stability in solution. | This index predicts the stability of a protein based on its amino acid composition. |10.32614/RJ-2015-001 |
 
+TCR Contact Region: Calculated for the central residues of the epitope. These are reported to interact directly with the TCR CDR loops. 
+Includes amino acids from position 4 to Omega -2 of the epitope sequence.
+
+| Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
+|--------------|-------------------|--------------------------------|-----------------|
+| Hydrophobicity_tcr_contact | Hydrophobicity (P4 - PO-2) | Hydrophobicity calculated as for the full peptide but exclusively against the central residues of the epitope. | 10.32614/RJ-2015-001 |
+| MW_tcr_contact | Molecular Weight (P4-PO-2) | Molecular Weight calculated as for the full peptide but exclusively against the central residues of the epitope. |10.32614/RJ-2015-001 |
+| Charge_tcr_contact | Net charge (P4-PO-2) | The net sum of the charges of each of the amino acids comprised in the central region of the peptide |10.32614/RJ-2015-001 |
 
 
 
