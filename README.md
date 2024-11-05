@@ -22,7 +22,7 @@ Cytotoxic T cells are key effectors in the immune response against pathogens and
     <img src="images/fig6_usage_scheme.jpg" alt="Usage Scheme" width="60%">
 </p>
 
-**Exploration Modes (Inputs)** <br>
+**Exploration Modes (Inputs)**  <br>
 A) **"CSV-Uniprot” mode**: input a .CSV file with pairs of peptide and HLA-I allele and the Uniprot ID of the corresponding parental protein. <br>
 B) **"CSV-Recombinant" mode**: input a .CSV file with pairs of peptide and HLA-I allele and the amino acid sequence of the protein of origin. This mode is designed to support (recombinant) proteins without Uniprot ID but can also work with any protein sequence. <br>
 C) **"FASTA" mode**: input a FASTA file with the target protein sequence and a .CSV file with a list of HLA-I alleles of interest ("HLA_allele" column). By default, PredIG will generate all possible epitopes of 8 to 14 AA of length and will calculate against the input HLA-I alleles. <br>
