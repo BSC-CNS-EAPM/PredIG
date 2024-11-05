@@ -82,7 +82,12 @@ Rscript scripts/predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/a
 Rscript scripts/predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model path --exp_name your_experiment9
 ```
 
-
+### Output Format
+#### Antigenic Features
+| Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
+|--------------|-------------------|--------------------------------|-----------------|
+| NOAH | HLA-I peptide binding (structural) | Likelihood for binding probability from negative to positive, being negative best.<br><-1 Binders<br><-5 Strong Binders | 10.1186/s12967-023-04843-8 |
+| NetCleave | C-terminal Cleavage for Proteasomal Antigen Processing | Probability score for C-terminal processing by the proteasome. From 0 to 1, being 1 best.<br>>= 0.6 Processed peptides.<br>>= 0.8 Optimally processed peptides. | NetCleave v2.0: 10.1007/978-1-0716-3239-0_15<br><br>NetCleave v1.0: 10.1038/s41598-021-92632-y |
 
 
 
