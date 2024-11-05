@@ -43,35 +43,35 @@ These include: <br>
 
 
 ### Tutorial
-PredIG uses XGBoost tunning to optimize its performance and adapt to different data sources. The main goal was to optimize the model to foster the scoring of epitopes in extreme class imbalance conditions where few immunogenic candidates are expected among many immune silent epitopes. Thus, we provide different models for the user to select the expected class imbalance in their target data. See PredIG Model Selection section.
+PredIG uses XGBoost tunning to optimize its performance and adapt to different data sources. The main goal was to optimize the model to foster the scoring of epitopes in extreme class imbalance conditions where few immunogenic candidates are expected among many immune silent epitopes. Thus, we provide different models for the user to select the expected class imbalance in their target data. See PredIG Model Selection section. <br>
 
-Find the scripts to run PredIG in the scripts folder of this repo and see each runner.txt for detailed information on command-line parameters.
+Find the scripts to run PredIG in the scripts folder of this repo and see each runner.txt for detailed information on command-line parameters. <br>
 
 #### PREDIG PIPELINE 1
 Input 1: CSV with epitope, HLA_allele, uniprot_id columns.
 
-Runner example for cancer neoantigens
+Runner example for cancer neoantigens <br>
 Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment1
 
-Runner example for non-canonical cancer antigens.
+Runner example for non-canonical cancer antigens. <br>
 Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment2
 
-Runner example for epitopes derived from pathogens.
+Runner example for epitopes derived from pathogens. <br>
 Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model path --exp_name your_experiment3
 
 #### PREDIG PIPELINE 2
-Input 2: CSV with epitope, HLA_allele, protein_seq and protein_name columns
+Input 2: CSV with epitope, HLA_allele, protein_seq and protein_name columns <br>
 
-Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment4
-Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment5
-Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model path --exp_name your_experiment6
+Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment4 <br>
+Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment5 <br>
+Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model path --exp_name your_experiment6 <br>
 
 #### PREDIG PIPELINE 3
-Input 3: FASTA with single protein and CSV with HLA-I alleles in 4-digits resolution. Ie: HLA-A*02:01 or HLA-A*01:101
+Input 3: FASTA with single protein and CSV with HLA-I alleles in 4-digits resolution. Ie: HLA-A*02:01 or HLA-A*01:101 <br>
 
-Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model neoant --exp_name your_experiment7
-Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model noncan --exp_name your_experiment8
-Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model path --exp_name your_experiment9
+Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model neoant --exp_name your_experiment7 <br>
+Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model noncan --exp_name your_experiment8 <br>
+Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model path --exp_name your_experiment9 <br>
 
 
 
