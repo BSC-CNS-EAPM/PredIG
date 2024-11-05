@@ -52,34 +52,34 @@ Input 1: CSV with epitope, HLA_allele, uniprot_id columns.
 
 Runner example for cancer neoantigens <br>
 ```r
-Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment1
+Rscript scripts/predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment1
 ```
 
 Runner example for non-canonical cancer antigens. <br>
 ```r
-Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment2
+Rscript scripts/predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment2
 ```
 
 Runner example for epitopes derived from pathogens. <br>
 ```r
-Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model path --exp_name your_experiment3
+Rscript scripts/predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model path --exp_name your_experiment3
 ```
 
 #### PREDIG PIPELINE 2
 Input 2: CSV with epitope, HLA_allele, protein_seq and protein_name columns <br>
 
 ```r
-Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment4
-Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment5
-Rscript predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model path --exp_name your_experiment6
+Rscript scripts/predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model neoant --exp_name your_experiment4
+Rscript scripts/predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model noncan --exp_name your_experiment5
+Rscript scripts/predig_pipe2_container.R --input path/to/input2.csv --out path/to/your/out/directory --model path --exp_name your_experiment6
 ```
 #### PREDIG PIPELINE 3
 Input 3: FASTA with single protein and CSV with HLA-I alleles in 4-digits resolution. Ie: HLA-A*02:01 or HLA-A*01:101 <br>
 
 ```r
-Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model neoant --exp_name your_experiment7
-Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model noncan --exp_name your_experiment8
-Rscript predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model path --exp_name your_experiment9
+Rscript scripts/predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model neoant --exp_name your_experiment7
+Rscript scripts/predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model noncan --exp_name your_experiment8
+Rscript scripts/predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/alleles3.csv --model path --exp_name your_experiment9
 ```
 
 
