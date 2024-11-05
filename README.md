@@ -102,9 +102,9 @@ Full Epitope: Calculated for the entire epitope sequence. <br>
 | Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
 |--------------|-------------------|--------------------------------|-----------------|
 | Hydrophobicity_peptide | Epitope Hydrophobicity | The hydrophobicity index is calculated adding the hydrophobicity of individual amino acids and dividing this value by the length of the sequence. Highly expected transmembrane peptides generally have higher hydrophobicity values than 0.5 using KyteDoolittle scale. | 10.32614/RJ-2015-001 |
-| MW_peptide | Molecular Weight.<br>Proxy for amino acid bulkiness. | The molecular weight is the sum of the masses of each atom constituting a molecule. The molecular weight is directly related to the length of the amino acid sequence and is expressed in daltons (Da). | |
-| Charge_peptide | Net electric charge. | The net sum of the charges of each of the amino acids comprised in the peptide. | |
-| Stability_peptide | Peptide (in)stability in solution. | This index predicts the stability of a protein based on its amino acid composition. | |
+| MW_peptide | Molecular Weight.<br>Proxy for amino acid bulkiness. | The molecular weight is the sum of the masses of each atom constituting a molecule. The molecular weight is directly related to the length of the amino acid sequence and is expressed in daltons (Da). | 10.32614/RJ-2015-001 |
+| Charge_peptide | Net electric charge. | The net sum of the charges of each of the amino acids comprised in the peptide. | 10.32614/RJ-2015-001 |
+| Stability_peptide | Peptide (in)stability in solution. | This index predicts the stability of a protein based on its amino acid composition. |10.32614/RJ-2015-001 |
 
 
 
