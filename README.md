@@ -83,11 +83,21 @@ Rscript scripts/predig_pipe3_container.R --fa path/to/input3.fasta --a path/to/a
 ```
 
 ### Output Format
+
+Your Results file is a CSV that contains the following columns: <br>
+
+| ID | epitope | HLA_allele | PredIG | NOAH | NetCleave | Hydrophobicity_peptide | MW_peptide | Charge_peptide | Stab_peptide | TCR_contact | Hydrophobicity_tcr_contact | MW_tcr_contact | Charge_tcr_contact |
+|----|---------|------------|--------|------|-----------|------------------------|------------|----------------|--------------|-------------|---------------------------|----------------|---------------------|
+
+**PredIG score**: Find it at column "PredIG". Briefly, PredIG score consists of a probability from 0 to 1, being 1 the maximum likelihood for epitope immunogenicity. This score can be used to rank candidates for prioritization approaches or to classify them using adaptable thresholds. <br>
+
 #### Antigenic Features
 | Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
 |--------------|-------------------|--------------------------------|-----------------|
 | NOAH | HLA-I peptide binding (structural) | Likelihood for binding probability from negative to positive, being negative best.<br><-1 Binders<br><-5 Strong Binders | 10.1186/s12967-023-04843-8 |
 | NetCleave | C-terminal Cleavage for Proteasomal Antigen Processing | Probability score for C-terminal processing by the proteasome. From 0 to 1, being 1 best.<br>>= 0.6 Processed peptides.<br>>= 0.8 Optimally processed peptides. | NetCleave v2.0: 10.1007/978-1-0716-3239-0_15<br><br>NetCleave v1.0: 10.1038/s41598-021-92632-y |
+
+### Physicochemical Features
 
 
 
