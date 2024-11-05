@@ -98,6 +98,13 @@ Your Results file is a CSV that contains the following columns: <br>
 | NetCleave | C-terminal Cleavage for Proteasomal Antigen Processing | Probability score for C-terminal processing by the proteasome. From 0 to 1, being 1 best.<br>>= 0.6 Processed peptides.<br>>= 0.8 Optimally processed peptides. | NetCleave v2.0: 10.1007/978-1-0716-3239-0_15<br><br>NetCleave v1.0: 10.1038/s41598-021-92632-y |
 
 ### Physicochemical Features
+| Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
+|--------------|-------------------|--------------------------------|-----------------|
+| Hydrophobicity_peptide | Epitope Hydrophobicity | The hydrophobicity index is calculated adding the hydrophobicity of individual amino acids and dividing this value by the length of the sequence. Highly expected transmembrane peptides generally have higher hydrophobicity values than 0.5 using KyteDoolittle scale. | 10.32614/RJ-2015-001 |
+| MW_peptide | Molecular Weight. Proxy for amino acid bulkiness. | The molecular weight is the sum of the masses of each atom constituting a molecule. The molecular weight is directly related to the length of the amino acid sequence and is expressed in daltons (Da). | |
+| Charge_peptide | Net electric charge. | The net sum of the charges of each of the amino acids comprised in the peptide. | |
+| Stability_peptide | Peptide (in)stability in solution. | This index predicts the stability of a protein based on its amino acid composition. | |
+| Hydrophobicity_tcr_contact | Hydrophobicity (P4 - PO-2) | Hydrophobicity calculated as for the full peptide but exclusively against the central residues of the epitope. | 10.32614/RJ-2015-001 |
 
 
 
