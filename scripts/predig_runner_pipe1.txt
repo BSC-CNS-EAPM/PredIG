@@ -1,0 +1,19 @@
+### PREDIG PIPE 1
+### RUNNER EXAMPLE
+### Input 1: CSV with epitope, HLA_allele, uniprot_id columns
+
+### runner
+Rscript predig_pipe1_container.R --input path/to/input1.csv --out path/to/your/out/directory --model neoant --exp_name experiment1
+
+
+### help
+# Script arguments
+--input': 			type = 'character', required = TRUE, help = 'Path to the input CSV file with epitope, HLA_allele, uniprot_id columns')
+--out': 		    type = 'character', required = TRUE, help = 'Path to the output file')
+--model': 		    type = 'character', required = TRUE, help = 'Specify which PredIG model to predict with: neoant, noncan or path')
+--exp_name': 	    type = 'character', required = TRUE, help = '(Your)Experiment name')
+
+# model flag:
+# neoant > predicts using PredIG model optimized for Cancer NeoAntigens.
+# noncan > predicts using PredIG model optimized for Non-Canonical Cancer Antigens.
+# path > predicts using PredIG model optimized for Pathogen Antigens.

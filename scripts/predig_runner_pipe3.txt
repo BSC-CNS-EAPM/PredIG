@@ -1,0 +1,26 @@
+### PREDIG PIPE 3
+### RUNNER EXAMPLE
+### Input 3: FASTA with single protein and CSV with HLA-I alleles in 4-digits resolution. Ie: HLA-A*02:01 or HLA-A*01:101
+
+### runner
+Rscript predig_pipe3_container.R 
+
+
+### help
+# Script arguments
+--in': 			type = 'character', required = TRUE, help = 'Path to the input CSV file with epitope, HLA_allele, prot_seq columns')
+--out': 		type = 'character', required = TRUE, help = 'Path to the output file')
+--model': 		type = 'character', required = TRUE, help = 'Specify which PredIG model to predict with: neoant, noncan or path')
+--exp_name': 	type = 'character', required = TRUE, help = '(Your)Experiment name')
+
+--fa': 			type = 'character', required = TRUE, help = 'Path to the input FASTA file with a single protein: type 3 using FASTA')
+--a': 			type = 'character', required = TRUE, help = 'Path to the input HLA-I alleles file: CSV with HLA_allele column and HLA-I alleles in 4-digits')
+--out': 		type = 'character', required = TRUE, help = 'Path to the output file')
+--model': 		type = 'character', required = TRUE, help = 'Specify which PredIG model to predict with: neoant, noncan or path')
+--exp_name': 	type = 'character', required = TRUE, help = 'Experiment name')
+
+
+# model flag:
+# neoant > predicts using PredIG model optimized for Cancer NeoAntigens.
+# noncan > predicts using PredIG model optimized for Non-Canonical Cancer Antigens.
+# path > predicts using PredIG model optimized for Pathogen Antigens.
