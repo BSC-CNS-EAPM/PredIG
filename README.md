@@ -98,7 +98,7 @@ Your Results file is a CSV that contains the following columns: <br>
 | NetCleave | C-terminal Cleavage for Proteasomal Antigen Processing | Probability score for C-terminal processing by the proteasome. From 0 to 1, being 1 best.<br>>= 0.6 Processed peptides.<br>>= 0.8 Optimally processed peptides. | NetCleave v2.0: 10.1007/978-1-0716-3239-0_15<br><br>NetCleave v1.0: 10.1038/s41598-021-92632-y |
 
 ### Physicochemical Features
-Full Epitope: Calculated for the entire epitope sequence. <br>
+**Full Epitope**: Calculated for the entire epitope sequence. <br>
 | Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
 |--------------|-------------------|--------------------------------|-----------------|
 | Hydrophobicity_peptide | Epitope Hydrophobicity | The hydrophobicity index is calculated adding the hydrophobicity of individual amino acids and dividing this value by the length of the sequence. Highly expected transmembrane peptides generally have higher hydrophobicity values than 0.5 using KyteDoolittle scale. | 10.32614/RJ-2015-001 |
@@ -106,7 +106,7 @@ Full Epitope: Calculated for the entire epitope sequence. <br>
 | Charge_peptide | Net electric charge. | The net sum of the charges of each of the amino acids comprised in the peptide. | 10.32614/RJ-2015-001 |
 | Stability_peptide | Peptide (in)stability in solution. | This index predicts the stability of a protein based on its amino acid composition. |10.32614/RJ-2015-001 |
 
-TCR Contact Region: Calculated for the central residues of the epitope. These are reported to interact directly with the TCR CDR loops. 
+**TCR Contact Region**: Calculated for the central residues of the epitope. These are reported to interact directly with the TCR CDR loops. 
 Includes amino acids from position 4 to Omega -2 of the epitope sequence.
 
 | Feature Name | Predicted Process | Scoring Range (Interpretation) | Reference (DOI) |
