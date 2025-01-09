@@ -16,7 +16,7 @@ Cytotoxic T cells are key effectors in the immune response against pathogens and
 ![Alt text](images/predig_graph_abstract.jpg)
 
 ### Usage Scheme
-##### PredIG usage modes in a user-friendly webserver implementation and in containerized environments for high-throughput reproducibility in HPC environments.
+PredIG usage modes in a user-friendly webserver implementation (https://horus.bsc.es/predig) and in containerized environments for high-throughput reproducibility in HPC environments (https://github.com/BSC-CNS-EAPM/predig-containers/).
 
 <p align="center">
     <img src="images/fig6_usage_scheme.jpg" alt="Usage Scheme" width="60%">
