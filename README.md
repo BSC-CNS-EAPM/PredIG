@@ -1,6 +1,6 @@
 # PredIG: an interpretable predictor of T-cell epitope immunogenicity
 
-Roc Farriol-Duran<sup>1,2</sup>*, Miguel Vázquez<sup>1</sup>, Eduard Porta-Pardo<sup>1,2</sup>, Víctor Guallar<sup>1,3</sup>ª
+Roc Farriol-Duran<sup>1,2</sup>*, Christian Dominguez-Dalmases</sup>1</sup>, Albert Cañellas-Solé</sup>1</sup>,Miguel Vázquez<sup>1</sup>, Eduard Porta-Pardo<sup>1,2</sup>, Víctor Guallar<sup>1,3</sup>ª
 1. Barcelona Supercomputing Center (BSC), 08034 Barcelona, Spain.
 2. Josep Carreras Leukaemia Research Institute (IJC), Badalona, Spain
 3. Institució Catalana de Recerca i Estudis Avançats (ICREA), Barcelona, Spain
